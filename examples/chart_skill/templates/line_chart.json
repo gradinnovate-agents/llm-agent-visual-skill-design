@@ -1,0 +1,14 @@
+{
+  "template_name": "line_chart",
+  "description": "標準折線圖模板",
+  "default_config": {
+    "chartType": "line",
+    "line_style": "solid",
+    "marker": "circle",
+    "colors": ["#2980b9"],
+    "fill_area": false,
+    "grid": true
+  },
+  "required_fields": ["data", "xField", "yField"],
+  "optional_fields": ["title", "smooth", "fill_area"]
+}

@@ -1,0 +1,27 @@
+{
+  "template_name": "image_generation_standard",
+  "description": "標準圖像生成配置",
+  "default_params": {
+    "style": "illustration",
+    "size": "1024x1024",
+    "format": "url"
+  },
+  "style_presets": {
+    "photorealistic": "professional photography, high detail, 8k",
+    "illustration": "digital art, clean lines, vibrant colors",
+    "sketch": "pencil sketch, monochrome, artistic",
+    "3d-render": "3d render, blender, octane render",
+    "anime": "anime style, studio ghibli, cel shading",
+    "minimalist": "minimal design, flat colors, geometric"
+  },
+  "quality_modifiers": {
+    "high": "high quality, detailed, professional",
+    "medium": "good quality, clear",
+    "low": "simple, basic"
+  },
+  "negative_prompts": {
+    "default": "blurry, low quality, distorted, deformed",
+    "people": "ugly, disfigured, extra limbs, bad anatomy",
+    "text": "text, watermark, signature, logo"
+  }
+}

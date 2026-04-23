@@ -1,0 +1,24 @@
+# LLM Agent 視覺化 SKILL 設計 - Python 依賴庫
+# 建議使用 Python 3.10+
+
+# ===== 基礎依賴 =====
+python-dotenv>=1.0.0
+requests>=2.31.0
+pydantic>=2.0.0
+jsonschema>=4.20.0
+
+# ===== 圖表生成 =====
+matplotlib>=3.8.0
+seaborn>=0.13.0
+plotly>=5.18.0
+pyecharts>=2.0.0
+
+# ===== 資料處理 =====
+pandas>=2.1.0
+numpy>=1.24.0
+
+# ===== LLM 整合 =====
+openai>=1.3.0
+
+# ===== 測試 =====
+pytest>=7.4.0

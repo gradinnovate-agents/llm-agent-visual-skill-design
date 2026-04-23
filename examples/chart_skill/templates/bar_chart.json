@@ -1,0 +1,13 @@
+{
+  "template_name": "bar_chart",
+  "description": "標準柱狀圖模板",
+  "default_config": {
+    "chartType": "bar",
+    "orientation": "vertical",
+    "colors": ["#2c3e50", "#3498db", "#2ecc71", "#e74c3c", "#f39c12"],
+    "show_values": true,
+    "grid": false
+  },
+  "required_fields": ["data", "xField", "yField"],
+  "optional_fields": ["title", "colors", "orientation"]
+}
