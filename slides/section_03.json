@@ -1,0 +1,128 @@
+{
+  "section": "03",
+  "title": "圖表 SKILL 設計實戰",
+  "slides": [
+    {
+      "type": "content",
+      "layout": "icon-grid",
+      "title": "支援的圖表類型",
+      "icons": [
+        {
+          "emoji": "📊",
+          "title": "bar",
+          "description": "柱狀圖 - 比較類別"
+        },
+        {
+          "emoji": "📈",
+          "title": "line",
+          "description": "折線圖 - 顯示趨勢"
+        },
+        {
+          "emoji": "•́́́",
+          "title": "scatter",
+          "description": "散佈圖 - 變數關係"
+        },
+        {
+          "emoji": "📖",
+          "title": "histogram",
+          "description": "直方圖 - 分佈"
+        }
+      ],
+      "key_points": []
+    },
+    {
+      "type": "content",
+      "layout": "code",
+      "title": "Input Schema 範例",
+      "body_text": "{\n  \"chartType\": \"bar\",\n  \"data\": [\n    {\"month\": \"1月\", \"sales\": 120},\n    {\"month\": \"2月\", \"sales\": 200}\n  ],\n  \"xField\": \"month\",\n  \"yField\": \"sales\",\n  \"title\": \"月度銷售額\"\n}",
+      "key_points": []
+    },
+    {
+      "type": "content",
+      "layout": "process-flow",
+      "title": "使用流程",
+      "steps": [
+        {
+          "title": "準備資料",
+          "description": "列表格式的資料"
+        },
+        {
+          "title": "選擇類型",
+          "description": "bar / line / scatter"
+        },
+        {
+          "title": "設定參數",
+          "description": "xField, yField, title"
+        },
+        {
+          "title": "執行生成",
+          "description": "調用 generate.py"
+        }
+      ],
+      "key_points": []
+    },
+    {
+      "type": "content",
+      "layout": "feature-showcase",
+      "title": "完整 SKILL 架構",
+      "features": [
+        {
+          "emoji": "📝",
+          "title": "SKILL.md",
+          "description": "主技能文件 (YAML + Markdown)"
+        },
+        {
+          "emoji": "📚",
+          "title": "references/",
+          "description": "參考手冊與範例"
+        },
+        {
+          "emoji": "📁",
+          "title": "templates/",
+          "description": "預設配置模板"
+        },
+        {
+          "emoji": "⚙️",
+          "title": "scripts/",
+          "description": "驗證與生成腳本"
+        }
+      ],
+      "key_points": []
+    },
+    {
+      "type": "content",
+      "layout": "table",
+      "title": "錯誤處理策略",
+      "table": [
+        [
+          "錯誤類型",
+          "說明",
+          "處理方式"
+        ],
+        [
+          "ValidationError",
+          "輸入不符合 schema",
+          "返回詳細錯誤"
+        ],
+        [
+          "EmptyDataError",
+          "資料為空",
+          "提示检查輸入"
+        ],
+        [
+          "RenderError",
+          "渲染失敗",
+          "重試或降級"
+        ]
+      ],
+      "key_points": []
+    },
+    {
+      "type": "section-break",
+      "layout": "section-break",
+      "section_number": "04",
+      "title": "圖像生成 SKILL 設計實戰",
+      "key_points": []
+    }
+  ]
+}

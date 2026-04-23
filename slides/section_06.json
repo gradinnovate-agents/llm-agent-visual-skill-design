@@ -1,0 +1,112 @@
+{
+  "section": "06",
+  "title": "案例研究：熱門實作剖析",
+  "slides": [
+    {
+      "type": "content",
+      "layout": "feature-showcase",
+      "title": "研究基礎",
+      "features": [
+        {
+          "emoji": "⭐",
+          "title": "antvis/mcp-server-chart",
+          "description": "MCP Server 架構，26+ 圖表類型"
+        },
+        {
+          "emoji": "📊",
+          "title": "hustcc/mcp-echarts",
+          "description": "ECharts 全功能，Structured Output"
+        },
+        {
+          "emoji": "🔧",
+          "title": "Preswald",
+          "description": "WASM 瀏覽器執行，離線可用"
+        },
+        {
+          "emoji": "🎨",
+          "title": "baoyu-infographic",
+          "description": "Layout × Style 雙維度"
+        }
+      ],
+      "key_points": []
+    },
+    {
+      "type": "content",
+      "layout": "table",
+      "title": "專案比較",
+      "table": [
+        [
+          "專案",
+          "Stars",
+          "設計特色",
+          "應用場景"
+        ],
+        [
+          "antvis/mcp-server-chart",
+          "3996+",
+          "Tool-based",
+          "精細控制"
+        ],
+        [
+          "hustcc/mcp-echarts",
+          "226+",
+          "Structured Output",
+          "結構化數據"
+        ],
+        [
+          "Preswald",
+          "4287+",
+          "WASM 執行",
+          "資料應用"
+        ],
+        [
+          "baoyu-infographic",
+          "150+",
+          "雙維度設計",
+          "豐富視覺"
+        ]
+      ],
+      "key_points": []
+    },
+    {
+      "type": "content",
+      "layout": "cycle-flow",
+      "title": "SKILL 設計迭代循環",
+      "cycle": [
+        {
+          "label": "研究需求"
+        },
+        {
+          "label": "設計 Schema"
+        },
+        {
+          "label": "實作核心"
+        },
+        {
+          "label": "驗證測試"
+        }
+      ],
+      "key_points": []
+    },
+    {
+      "type": "content",
+      "layout": "summary",
+      "title": "課程績效 Checklist",
+      "key_points": [
+        "✅ 能解釋 SKILL 和 Tool 的差異",
+        "✅ 能寫出符合規範的 SKILL.md",
+        "✅ 理解四大設計模式的選擇邏輯",
+        "✅ 能獨立設計並實作圖表/圖像 SKILL",
+        "✅ 能建立完整的驗證機制"
+      ]
+    },
+    {
+      "type": "content",
+      "layout": "end",
+      "title": "謝謝聽講",
+      "subtitle": "LLM Agent 視覺化 SKILL 設計 v2",
+      "body_text": "完整教材與範例請見 GitHub\\ngradinnovate-agents/llm-agent-visual-skill-design",
+      "key_points": []
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "title": "LLM Agent 視覺化 SKILL 設計 v2",
+  "theme": "tech-dark",
+  "author": "gradinnovate-agents",
+  "sections": [
+    {"id": "01", "title": "SKILL 設計基礎"},
+    {"id": "02", "title": "設計模式深度剖析"},
+    {"id": "03", "title": "圖表 SKILL 設計實戰"},
+    {"id": "04", "title": "圖像生成 SKILL 設計實戰"},
+    {"id": "05", "title": "驗證與測試策略"},
+    {"id": "06", "title": "案例研究：熱門實作剖析"}
+  ],
+  "visual_assets": {
+    "section_01": {"mermaid": [], "formulas": [], "code": [], "charts": [], "illustrations": [], "graphs": []},
+    "section_02": {"mermaid": [], "formulas": [], "code": [], "charts": [], "illustrations": [], "graphs": []},
+    "section_03": {"mermaid": [], "formulas": [], "code": [], "charts": [], "illustrations": [], "graphs": []},
+    "section_04": {"mermaid": [], "formulas": [], "code": [], "charts": [], "illustrations": [], "graphs": []},
+    "section_05": {"mermaid": [], "formulas": [], "code": [], "charts": [], "illustrations": [], "graphs": []},
+    "section_06": {"mermaid": [], "formulas": [], "code": [], "charts": [], "illustrations": [], "graphs": []}
+  }
+}

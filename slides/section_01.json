@@ -1,0 +1,94 @@
+{
+  "section": "01",
+  "title": "SKILL 設計基礎",
+  "slides": [
+    {
+      "type": "cover",
+      "layout": "cover",
+      "title": "SKILL 設計基礎",
+      "subtitle": "讓 LLM Agent 擁有視覺化能力",
+      "key_points": []
+    },
+    {
+      "type": "content",
+      "layout": "icon-grid",
+      "title": "為什麼需要 SKILL 設計？",
+      "icons": [
+        {
+          "emoji": "📊",
+          "title": "資料分析",
+          "description": "將 CSV 資料轉換為圖表"
+        },
+        {
+          "emoji": "📈",
+          "title": "商業儀表板",
+          "description": "即時可視化業績指標"
+        },
+        {
+          "emoji": "📝",
+          "title": "教育簡報",
+          "description": "自動生成說明性圖表"
+        },
+        {
+          "emoji": "🖼️",
+          "title": "圖像創作",
+          "description": "產生行銷素材"
+        }
+      ],
+      "key_points": []
+    },
+    {
+      "type": "content",
+      "layout": "statement",
+      "title": "SKILL vs Tool vs Function",
+      "subtitle": "三個層級的抽象差異",
+      "key_points": []
+    },
+    {
+      "type": "content",
+      "layout": "table",
+      "title": "層級對比",
+      "table": [
+        [
+          "概念",
+          "層級",
+          "定義",
+          "範例"
+        ],
+        [
+          "Function",
+          "低",
+          "單一可調用的程式函數",
+          "generate_bar_chart()"
+        ],
+        [
+          "Tool",
+          "中",
+          "多個 Function 組合 + 使用說明",
+          "Chart Tool"
+        ],
+        [
+          "SKILL",
+          "高",
+          "完整的能力系統",
+          "數據可視化 SKILL"
+        ]
+      ],
+      "key_points": []
+    },
+    {
+      "type": "content",
+      "layout": "code",
+      "title": "SKILL.md 語法範例",
+      "body_text": "---\nname: chart-generation-skill\nversion: \"1.0.0\"\ndescription: 生成專業級圖表的技能\ntrigger: 當用戶需要圖表時\n---\n\n# 圖表生成技能\n\n## 使用流程\n1. 分析需求 → 確定圖表類型\n2. 驗證輸入 → JSON Schema 檢查\n3. 生成圖表 → 調用渲染引擎",
+      "key_points": []
+    },
+    {
+      "type": "section-break",
+      "layout": "section-break",
+      "section_number": "02",
+      "title": "設計模式深度剖析",
+      "key_points": []
+    }
+  ]
+}

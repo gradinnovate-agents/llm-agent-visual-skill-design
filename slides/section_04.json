@@ -1,0 +1,111 @@
+{
+  "section": "04",
+  "title": "圖像生成 SKILL 設計實戰",
+  "slides": [
+    {
+      "type": "content",
+      "layout": "icon-grid",
+      "title": "圖像生成的特殊性",
+      "icons": [
+        {
+          "emoji": "❓",
+          "title": "不確定性",
+          "description": "同一 prompt 可能產生不同結果"
+        },
+        {
+          "emoji": "🎨",
+          "title": "風格控制",
+          "description": "需要明確的風格系統"
+        },
+        {
+          "emoji": "🔁",
+          "title": "一致性",
+          "description": "多張圖需維持相同風格"
+        },
+        {
+          "emoji": "⭐",
+          "title": "質量評估",
+          "description": "難以程式化判斷"
+        }
+      ],
+      "key_points": []
+    },
+    {
+      "type": "content",
+      "layout": "table",
+      "title": "預設風格",
+      "table": [
+        [
+          "風格",
+          "描述",
+          "適用場景"
+        ],
+        [
+          "photorealistic",
+          "寫實攝影",
+          "產品照、人物寫真"
+        ],
+        [
+          "illustration",
+          "數位插畫",
+          "文章插圖、說明圖"
+        ],
+        [
+          "sketch",
+          "手繪",
+          "草圖、概念圖"
+        ],
+        [
+          "3d-render",
+          "3D 渲染",
+          "產品展示、建範"
+        ],
+        [
+          "anime",
+          "動漫",
+          "卡通、角色設計"
+        ],
+        [
+          "minimalist",
+          "極簡",
+          "簡報、網頁設計"
+        ]
+      ],
+      "key_points": []
+    },
+    {
+      "type": "content",
+      "layout": "code",
+      "title": "Prompt Engineering 指南",
+      "body_text": "結構化 Prompt 模板:\n[主體描述] + [風格修飾] + [技術參數]\n\n範例:\n\"一隻橘色的貓坐在窗邊,\n 數位藝術風格,\n 高細節, 8k\"\n\n重要要素:\n- Subject: 主體 (a cat, a landscape)\n- Style: 風格 (digital art, photo)\n- Quality: 品質 (high quality, 8k)\n- Lighting: 光照 (natural light)\n- Composition: 構圖 (rule of thirds)",
+      "key_points": []
+    },
+    {
+      "type": "content",
+      "layout": "highlight-boxes",
+      "title": "風格一致性保證",
+      "boxes": [
+        {
+          "title": "使用 Seed",
+          "description": "固定隨機種子確保可複現"
+        },
+        {
+          "title": "結構化 Prompt",
+          "description": "統一的提示詞模板"
+        },
+        {
+          "title": "負面提示詞",
+          "description": "排除不必要的元素"
+        }
+      ],
+      "key_points": []
+    },
+    {
+      "type": "section-break",
+      "layout": "section-break",
+      "section_number": "05",
+      "title": "驗證與測試策略",
+      "key_points": []
+    }
+  ]
+}

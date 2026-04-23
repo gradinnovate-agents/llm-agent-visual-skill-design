@@ -1,0 +1,132 @@
+{
+  "section": "02",
+  "title": "設計模式深度剖析",
+  "slides": [
+    {
+      "type": "content",
+      "layout": "feature-showcase",
+      "title": "四大設計模式",
+      "features": [
+        {
+          "emoji": "🔧",
+          "title": "Tool Calling",
+          "description": "每個圖表類型是獨立 Tool"
+        },
+        {
+          "emoji": "📋",
+          "title": "Structured Output",
+          "description": "LLM 輸出 JSON 轉換"
+        },
+        {
+          "emoji": "💻",
+          "title": "Code Interpreter",
+          "description": "生成執行碼在沙盒執行"
+        },
+        {
+          "emoji": "🎨",
+          "title": "Generative UI",
+          "description": "佈局×樣式雙維度控制"
+        }
+      ],
+      "key_points": []
+    },
+    {
+      "type": "content",
+      "layout": "two-column",
+      "title": "Tool Calling vs Structured Output",
+      "columns": {
+        "left": {
+          "heading": "Tool Calling",
+          "key_points": [
+            "每個圖表類型是獨立函數",
+            "精細控制參數",
+            "適合穩定的圖表類型"
+          ]
+        },
+        "right": {
+          "heading": "Structured Output",
+          "key_points": [
+            "LLM 只負責輸出 JSON",
+            "解耦渲染引擎",
+            "更大的彈性"
+          ]
+        }
+      },
+      "key_points": []
+    },
+    {
+      "type": "content",
+      "layout": "numbered-steps",
+      "title": "Code Interpreter 流程",
+      "steps": [
+        {
+          "title": "LLM 生成代碼",
+          "description": "根據需求生成 Python 程式碼"
+        },
+        {
+          "title": "安全檢查",
+          "description": "檢查禁用模組和關鍵字"
+        },
+        {
+          "title": "沙盒執行",
+          "description": "在受限環境中執行"
+        },
+        {
+          "title": "捕捉輸出",
+          "description": "獲取生成的圖片"
+        }
+      ],
+      "key_points": []
+    },
+    {
+      "type": "content",
+      "layout": "branching-tree",
+      "title": "模式選擇決策樹",
+      "tree": {
+        "label": "需要什麼樣的圖表能力？",
+        "children": [
+          {
+            "label": "彈性/通用性 → Code Interpreter"
+          },
+          {
+            "label": "精確控制 → Tool Calling"
+          },
+          {
+            "label": "結構化數據 → Structured Output"
+          },
+          {
+            "label": "豐富視覺 → Generative UI"
+          }
+        ]
+      },
+      "key_points": []
+    },
+    {
+      "type": "content",
+      "layout": "highlight-boxes",
+      "title": "模式選擇建議",
+      "boxes": [
+        {
+          "title": "需要精細控制",
+          "description": "選擇 Tool Calling 模式"
+        },
+        {
+          "title": "需要彈性",
+          "description": "選擇 Code Interpreter 模式"
+        },
+        {
+          "title": "需要解耦",
+          "description": "選擇 Structured Output 模式"
+        }
+      ],
+      "key_points": []
+    },
+    {
+      "type": "section-break",
+      "layout": "section-break",
+      "section_number": "03",
+      "title": "圖表 SKILL 設計實戰",
+      "key_points": []
+    }
+  ]
+}

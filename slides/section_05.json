@@ -1,0 +1,88 @@
+{
+  "section": "05",
+  "title": "驗證與測試策略",
+  "slides": [
+    {
+      "type": "content",
+      "layout": "numbered-steps",
+      "title": "三層驗證體系",
+      "steps": [
+        {
+          "title": "JSON Schema 驗證",
+          "description": "結構、類型、必填欄位檢查"
+        },
+        {
+          "title": "業務邏輯驗證",
+          "description": "數據範圍、業務規則、一致性"
+        },
+        {
+          "title": "結果驗證",
+          "description": "輸出格式、內容正確性、品質"
+        }
+      ],
+      "key_points": []
+    },
+    {
+      "type": "content",
+      "layout": "code",
+      "title": "JSON Schema 驗證實作",
+      "body_text": "import jsonschema\n\nCHART_SCHEMA = {\n  \"type\": \"object\",\n  \"properties\": {\n    \"chartType\": {\n      \"type\": \"string\",\n      \"enum\": [\"bar\", \"line\", \"scatter\"]\n    },\n    \"data\": {\n      \"type\": \"array\",\n      \"minItems\": 1\n    }\n  },\n  \"required\": [\"chartType\", \"data\"]\n}\n\njsonschema.validate(input_data, CHART_SCHEMA)",
+      "key_points": []
+    },
+    {
+      "type": "content",
+      "layout": "table",
+      "title": "測試層級",
+      "table": [
+        [
+          "測試類型",
+          "範圍",
+          "工具"
+        ],
+        [
+          "單元測試",
+          "個別函數和類別",
+          "pytest, unittest"
+        ],
+        [
+          "整合測試",
+          "多個組件交互",
+          "API 測試"
+        ],
+        [
+          "E2E 測試",
+          "完整流程",
+          "Selenium, Playwright"
+        ]
+      ],
+      "key_points": []
+    },
+    {
+      "type": "content",
+      "layout": "highlight-boxes",
+      "title": "錯誤處理策略",
+      "boxes": [
+        {
+          "title": "驗證錯誤",
+          "description": "立即失敗，回傳詳細錯誤"
+        },
+        {
+          "title": "渲染錯誤",
+          "description": "重詥或切換方案"
+        },
+        {
+          "title": "超時",
+          "description": "設定合理超時並返回部分結果"
+        }
+      ],
+      "key_points": []
+    },
+    {
+      "type": "section-break",
+      "layout": "section-break",
+      "section_number": "06",
+      "title": "案例研究：熱門實作剖析",
+      "key_points": []
+    }
+  ]
+}
